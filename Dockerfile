@@ -1,6 +1,6 @@
 FROM golang:1.7.3-alpine
 
-ENV SOURCES /go/src/github.com/lreimer/cloud-native-go/
+ENV SOURCES /go/src/github.com/devopsevd/cloud-native-go/
 
 COPY . ${SOURCES}
 

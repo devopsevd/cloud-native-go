@@ -1,10 +1,9 @@
 FROM golang:1.7.3-alpine
 
-ENV SOURCES /go/src/github.com/devopsevd/cloud-native-go/
+COPY ./Cloud-Native-Go /app/Cloud-Native-Go
+RUN chmod +x /app/Cloud-Native-Go
 
-COPY . ${SOURCES}
-
-RUN cd ${SOURCES} && CGO_ENABLED=0 go install -a
-
-ENTRYPOINT cloud-native-go
+ENV PORT 8084
 EXPOSE 8084
+
+ENTRYPOINT /app/Cloud-Native-Go

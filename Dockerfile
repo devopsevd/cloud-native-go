@@ -1,9 +1,9 @@
 FROM golang:1.7.3-alpine
 
-COPY ./Cloud-Native-Go /app/Cloud-Native-Go
-RUN chmod +x /app/Cloud-Native-Go
+COPY ./cloud-native-go /app/cloud-native-go
+RUN chmod +x /app/cloud-native-go
 
 ENV PORT 8084
 EXPOSE 8084
 
-ENTRYPOINT /app/Cloud-Native-Go
+ENTRYPOINT /app/cloud-native-go

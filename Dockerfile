@@ -1,5 +1,6 @@
 FROM golang:1.7.3-alpine
 
+mkdir /app
 COPY ./cloud-native-go /app/cloud-native-go
 RUN chmod +x /app/cloud-native-go
 

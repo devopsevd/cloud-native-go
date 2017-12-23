@@ -4,7 +4,7 @@ import(
 	"fmt"
 	"net/http"
 	"os"
-	"github.com/lreimer/cloud-native-go/api"
+	"github.com/devopsevd/cloud-native-go/api"
 )
 
 func main()  {
